@@ -9,7 +9,7 @@ package ProgramasBasicos;
  *
  * @author josda
  */
-public class Programa1 {
+public class Programa2 {
 
     /**
      * @param args the command line arguments
@@ -18,10 +18,9 @@ public class Programa1 {
         // TODO code application logic here
     }
     
-    public void programa1(){
+    public void programa2(){
         System.out.println("TEST");
         Febuntux.Programas_Basicos basicos = new Febuntux.Programas_Basicos();
         basicos.setVisible(true);
     }
-    
 }
