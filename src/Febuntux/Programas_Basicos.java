@@ -268,9 +268,9 @@ public class Programas_Basicos extends javax.swing.JFrame {
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
     // TODO add your handling code here:
-    Proyecto_Integrador menu=new Proyecto_Integrador();
-    menu.setVisible(true);
-    this.setVisible(false);
+        Proyecto_Integrador menu=new Proyecto_Integrador();
+        menu.setVisible(true);
+        this.setVisible(false);
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
@@ -283,71 +283,71 @@ public class Programas_Basicos extends javax.swing.JFrame {
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
         // TODO add your handling code here:
         ProgramasBasicos.Programa1 pro1 = new ProgramasBasicos.Programa1();
-        pro1.programa1();
         this.setVisible(false);
+        pro1.programa1();
     }//GEN-LAST:event_jButton3ActionPerformed
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
         // TODO add your handling code here:
         ProgramasBasicos.Programa2 pro2 = new ProgramasBasicos.Programa2();
-        pro2.programa2();
         this.setVisible(false);
+        pro2.programa2();
     }//GEN-LAST:event_jButton4ActionPerformed
 
     private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
         // TODO add your handling code here:
         ProgramasBasicos.Programa5 pro5 = new ProgramasBasicos.Programa5();
-        pro5.programa5();
         this.setVisible(false);
+        pro5.programa5();
     }//GEN-LAST:event_jButton7ActionPerformed
 
     private void jButton9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton9ActionPerformed
         // TODO add your handling code here:
         ProgramasBasicos.Programa7 pro7 = new ProgramasBasicos.Programa7();
-        pro7.programa7();
         this.setVisible(false);
+        pro7.programa7();
     }//GEN-LAST:event_jButton9ActionPerformed
 
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
         // TODO add your handling code here:
         ProgramasBasicos.Programa3 pro3 = new ProgramasBasicos.Programa3();
-        pro3.programa3();
         this.setVisible(false);
+        pro3.programa3();
     }//GEN-LAST:event_jButton5ActionPerformed
 
     private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
         // TODO add your handling code here:
         ProgramasBasicos.Programa4 pro4 = new ProgramasBasicos.Programa4();
-        pro4.programa4();
         this.setVisible(false);
+        pro4.programa4();
     }//GEN-LAST:event_jButton6ActionPerformed
 
     private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton8ActionPerformed
         // TODO add your handling code here:
         ProgramasBasicos.Programa6 pro6 = new ProgramasBasicos.Programa6();
-        pro6.programa6();
         this.setVisible(false);
+        pro6.programa6();
     }//GEN-LAST:event_jButton8ActionPerformed
 
     private void jButton10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton10ActionPerformed
         // TODO add your handling code here:
         ProgramasBasicos.Programa8 pro8 = new ProgramasBasicos.Programa8();
-        pro8.programa8();
         this.setVisible(false);
+        pro8.programa8();
     }//GEN-LAST:event_jButton10ActionPerformed
 
     private void jButton11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton11ActionPerformed
         // TODO add your handling code here:
         ProgramasBasicos.Programa9 pro9 = new ProgramasBasicos.Programa9();
-        pro9.programa9();
         this.setVisible(false);
+        pro9.programa9();
     }//GEN-LAST:event_jButton11ActionPerformed
 
     private void jButton12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton12ActionPerformed
         // TODO add your handling code here:
         ProgramasBasicos.Programa10 pro10 = new ProgramasBasicos.Programa10();
-        pro10.programa10();
         this.setVisible(false);
+        pro10.programa10();
     }//GEN-LAST:event_jButton12ActionPerformed
 
     
