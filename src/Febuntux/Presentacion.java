@@ -5,7 +5,6 @@
  */
 package Febuntux;
 
-import static java.awt.SystemColor.menu;
 
 /**
  *
@@ -56,6 +55,14 @@ public class Presentacion extends javax.swing.JFrame {
         jMenu1.setText("jMenu1");
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        addWindowListener(new java.awt.event.WindowAdapter() {
+            public void windowActivated(java.awt.event.WindowEvent evt) {
+                formWindowActivated(evt);
+            }
+            public void windowOpened(java.awt.event.WindowEvent evt) {
+                formWindowOpened(evt);
+            }
+        });
 
         jLabel1.setText("FEBUNTUX");
 
@@ -75,7 +82,7 @@ public class Presentacion extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(jButton1)
                     .addComponent(jLabel1))
-                .addContainerGap(165, Short.MAX_VALUE))
+                .addContainerGap(282, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -84,10 +91,11 @@ public class Presentacion extends javax.swing.JFrame {
                 .addComponent(jLabel1)
                 .addGap(78, 78, 78)
                 .addComponent(jButton1)
-                .addContainerGap(136, Short.MAX_VALUE))
+                .addContainerGap(225, Short.MAX_VALUE))
         );
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
@@ -97,6 +105,29 @@ public class Presentacion extends javax.swing.JFrame {
                     menu.setVisible(true);
                     this.setVisible(false);
     }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void formWindowOpened(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowOpened
+        // TODO add your handling code here:
+        for(int i=0; i>50000; i++){
+            if(i>50000){
+                Proyecto_Integrador menu = new Proyecto_Integrador();
+                    //this.setVisible(false);
+                    menu.setVisible(true);
+            }
+        }
+    }//GEN-LAST:event_formWindowOpened
+
+    private void formWindowActivated(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowActivated
+        // TODO add your handling code here:
+        for(int i=0; i>50000; i++){
+            System.out.println(i);
+            if(i>50000){
+                Proyecto_Integrador menu = new Proyecto_Integrador();
+                    //this.setVisible(false);
+                    menu.setVisible(true);
+            }
+        }
+    }//GEN-LAST:event_formWindowActivated
 
     /**
      * @param args the command line arguments
@@ -129,6 +160,7 @@ public class Presentacion extends javax.swing.JFrame {
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
                 new Presentacion().setVisible(true);
+                
                 //inicio();
                 //new Presentacion().setVisible(false);
             }              

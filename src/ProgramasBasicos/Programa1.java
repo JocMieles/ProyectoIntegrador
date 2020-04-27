@@ -18,4 +18,8 @@ public class Programa1 {
         // TODO code application logic here
     }
     
+    public void p(){
+        System.out.println("TEST");
+    }
+    
 }
