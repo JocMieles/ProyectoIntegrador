@@ -1,24 +1,24 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package ProgramasBasicos;
 
-/**
- *
- * @author josda
- */
+
 public class Programa3 {
 
-    /**
-     * @param args the command line arguments
-     */
+    
     public static void main(String[] args) {
         // TODO code application logic here
     }
     public void programa3(){
-        System.out.println("TEST");
+        double h,f,j,u,d,n;
+        h=7;
+        f=2;
+        j=6;
+        u=4;
+        d=5;
+        
+        
+        n=(f*6)-(j/2)-(h+6)/2+(u*d);
+        System.out.println("el valor de n es\t"+n);
         Febuntux.Programas_Basicos basicos = new Febuntux.Programas_Basicos();
         basicos.setVisible(true);
     }

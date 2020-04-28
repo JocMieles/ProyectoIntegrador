@@ -1,24 +1,33 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package ProgramasBasicos;
 
-/**
- *
- * @author josda
- */
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
+
 public class Programa5 {
 
-    /**
-     * @param args the command line arguments
-     */
+    
     public static void main(String[] args) {
         // TODO code application logic here
     }
-    public void programa5(){
-        System.out.println("TEST");
+    public void programa5()
+            throws IOException
+    {
+        BufferedReader bf=new BufferedReader(new InputStreamReader(System.in));
+        String sbase,saltura;
+        double area,altura,base;
+        System.out.println("Cual es la altura");
+        saltura=bf.readLine();
+        altura=Double.parseDouble(saltura);
+        System.out.println("Cual es la Base");
+        sbase=bf.readLine();
+        base=Double.parseDouble(sbase);
+                   
+        area=(base*altura)/2;
+
+        System.out.println("El area es \t"+area);
         Febuntux.Programas_Basicos basicos = new Febuntux.Programas_Basicos();
         basicos.setVisible(true);
     }
