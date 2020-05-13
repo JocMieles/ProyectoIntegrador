@@ -74,6 +74,11 @@ public class Programacion extends javax.swing.JFrame {
         jButton3.setBackground(new java.awt.Color(0, 0, 0));
         jButton3.setForeground(new java.awt.Color(255, 255, 255));
         jButton3.setText("INGRESAR");
+        jButton3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton3ActionPerformed(evt);
+            }
+        });
         jPanel1.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 260, -1, -1));
 
         jButton4.setBackground(new java.awt.Color(0, 0, 0));
@@ -123,6 +128,13 @@ public class Programacion extends javax.swing.JFrame {
         pDecision.setVisible(true);
         this.setVisible(false); // TODO add your handling code here:
     }//GEN-LAST:event_jButton2ActionPerformed
+
+    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+        // TODO add your handling code here:
+        Programas_Repeticion pRepeticion = new Programas_Repeticion();
+        pRepeticion.setVisible(true);
+        this.setVisible(false);
+    }//GEN-LAST:event_jButton3ActionPerformed
 
    
     public static void main(String args[]) {
