@@ -64,6 +64,11 @@ public class Programacion extends javax.swing.JFrame {
         jButton2.setBackground(new java.awt.Color(0, 0, 0));
         jButton2.setForeground(new java.awt.Color(255, 255, 255));
         jButton2.setText("INGRESAR");
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
         jPanel1.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 210, -1, -1));
 
         jButton3.setBackground(new java.awt.Color(0, 0, 0));
@@ -112,6 +117,12 @@ public class Programacion extends javax.swing.JFrame {
         menu.setVisible(true);
         this.setVisible(false);
     }//GEN-LAST:event_jButton4ActionPerformed
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        Programas_Decision pDecision = new Programas_Decision();
+        pDecision.setVisible(true);
+        this.setVisible(false); // TODO add your handling code here:
+    }//GEN-LAST:event_jButton2ActionPerformed
 
    
     public static void main(String args[]) {
