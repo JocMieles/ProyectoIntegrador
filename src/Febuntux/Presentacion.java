@@ -1,8 +1,10 @@
 package Febuntux;
 
+import com.sun.awt.AWTUtilities;
 import javax.swing.JDialog;
 import javax.swing.JFrame;
 import javax.swing.UIManager;
+import rojerusan.componentes.RSProgressBarSinText;
 
 
 
@@ -11,7 +13,11 @@ public class Presentacion extends javax.swing.JFrame {
 
     public Presentacion() {
         initComponents();
+       this.setLocationRelativeTo(this);
        
+       this.barra.setValue(0);
+       this.lbl.setText("0%");
+       startThread();
     }
 
 
@@ -38,7 +44,8 @@ public class Presentacion extends javax.swing.JFrame {
         jTextPane1 = new javax.swing.JTextPane();
         jMenu1 = new javax.swing.JMenu();
         jLabel1 = new javax.swing.JLabel();
-        jButton1 = new javax.swing.JButton();
+        barra = new rojerusan.componentes.RSProgressBarSinText();
+        lbl = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
 
         jScrollPane1.setViewportView(jTextPane1);
@@ -62,16 +69,15 @@ public class Presentacion extends javax.swing.JFrame {
         jLabel1.setText("FEBUNTUX");
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, 280, 70));
 
-        jButton1.setBackground(new java.awt.Color(0, 0, 0));
-        jButton1.setFont(new java.awt.Font("Verdana", 0, 13)); // NOI18N
-        jButton1.setForeground(new java.awt.Color(255, 255, 255));
-        jButton1.setText("INICIO");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
-            }
-        });
-        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 400, 140, -1));
+        barra.setForeground(new java.awt.Color(0, 0, 0));
+        barra.setColorForeground(new java.awt.Color(153, 255, 255));
+        getContentPane().add(barra, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 420, 430, -1));
+
+        lbl.setFont(new java.awt.Font("Tahoma", 1, 36)); // NOI18N
+        lbl.setForeground(new java.awt.Color(153, 255, 255));
+        lbl.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lbl.setText("50 %");
+        getContentPane().add(lbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 450, -1, -1));
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/fondoPre.jpeg"))); // NOI18N
         getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
@@ -79,14 +85,6 @@ public class Presentacion extends javax.swing.JFrame {
         pack();
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
-
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        // TODO add your handling code here:
-        Proyecto_Integrador menu = new Proyecto_Integrador();
-                    
-                    menu.setVisible(true);
-                    this.setVisible(false);
-    }//GEN-LAST:event_jButton1ActionPerformed
 
     private void formWindowOpened(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowOpened
         // TODO add your handling code here:
@@ -151,11 +149,28 @@ public class Presentacion extends javax.swing.JFrame {
     
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
+    private rojerusan.componentes.RSProgressBarSinText barra;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JMenu jMenu1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTextPane jTextPane1;
+    private javax.swing.JLabel lbl;
     // End of variables declaration//GEN-END:variables
+
+    Cargar hilo;
+    public RSProgressBarSinText getProgress(){
+        return this.barra;
+    }
+    
+    public void setProgress(RSProgressBarSinText progress){
+        this.barra = progress;
+    }
+    
+    public void startThread(){
+        hilo = new Cargar (getProgress(), this, lbl);
+        hilo.start();
+        hilo = null;
+        
+    }
 }
