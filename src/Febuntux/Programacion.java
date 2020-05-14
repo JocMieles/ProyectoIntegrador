@@ -33,7 +33,7 @@ public class Programacion extends javax.swing.JFrame {
 
         jLabel1.setFont(new java.awt.Font("Sitka Banner", 1, 36)); // NOI18N
         jLabel1.setText("LOGICA DE PROGRAMACION");
-        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 30, 440, 30));
+        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 30, 520, 30));
 
         jLabel2.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         jLabel2.setText("EDWARD REYES");
@@ -41,7 +41,7 @@ public class Programacion extends javax.swing.JFrame {
 
         jLabel3.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         jLabel3.setText("PROGRAMAS BASICOS");
-        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 160, -1, -1));
+        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 160, -1, -1));
 
         jLabel4.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         jLabel4.setText("PROGRAMAS DE DECISIÓN");
@@ -59,7 +59,7 @@ public class Programacion extends javax.swing.JFrame {
                 jButton1ActionPerformed(evt);
             }
         });
-        jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 150, -1, -1));
+        jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 160, -1, -1));
 
         jButton2.setBackground(new java.awt.Color(0, 0, 0));
         jButton2.setForeground(new java.awt.Color(255, 255, 255));

@@ -50,13 +50,15 @@ public class Proyecto_Integrador extends javax.swing.JFrame {
         jLabel5.setText("JOSE MIELES");
         getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 120, -1, -1));
 
+        jLabel6.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jLabel6.setForeground(new java.awt.Color(204, 255, 255));
         jLabel6.setText("SISTEMAS OPERATIVOS");
-        getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 170, -1, -1));
+        getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 190, -1, -1));
 
+        jLabel7.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jLabel7.setForeground(new java.awt.Color(204, 255, 255));
         jLabel7.setText("INTRODUCCIÓN AL HARDWARE");
-        getContentPane().add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 200, -1, -1));
+        getContentPane().add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 240, -1, -1));
 
         jButton1.setBackground(new java.awt.Color(0, 0, 0));
         jButton1.setForeground(new java.awt.Color(255, 255, 255));
@@ -66,11 +68,12 @@ public class Proyecto_Integrador extends javax.swing.JFrame {
                 jButton1ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 160, -1, -1));
+        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 190, -1, -1));
 
+        jLabel8.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jLabel8.setForeground(new java.awt.Color(204, 255, 255));
         jLabel8.setText("LÓGICA DE PROGRAMACIÓN");
-        getContentPane().add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 240, -1, -1));
+        getContentPane().add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 290, -1, -1));
 
         jButton2.setBackground(new java.awt.Color(0, 0, 0));
         jButton2.setForeground(new java.awt.Color(255, 255, 255));
@@ -80,7 +83,7 @@ public class Proyecto_Integrador extends javax.swing.JFrame {
                 jButton2ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 200, -1, -1));
+        getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 240, -1, -1));
 
         jButton3.setBackground(new java.awt.Color(0, 0, 0));
         jButton3.setForeground(new java.awt.Color(255, 255, 255));
@@ -90,7 +93,7 @@ public class Proyecto_Integrador extends javax.swing.JFrame {
                 jButton3ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 230, -1, -1));
+        getContentPane().add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 290, -1, -1));
 
         jButton4.setBackground(new java.awt.Color(0, 0, 0));
         jButton4.setForeground(new java.awt.Color(255, 255, 255));
@@ -100,7 +103,7 @@ public class Proyecto_Integrador extends javax.swing.JFrame {
                 jButton4ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 400, -1, -1));
+        getContentPane().add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 420, -1, -1));
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/iniciofondo.jpg"))); // NOI18N
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 730, 490));
